@@ -1,0 +1,461 @@
+:root {
+    --background-color: white;
+    --first-main-color: lightblue;
+    --second-main-color: #00CED1;
+    --outline-color: black;
+    --text-color: black;
+
+    --lite-produkt-høyde : 150px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding-bottom: 10px;
+    height: 100px;
+    text-align: center;
+    background-color: var(--first-main-color);
+    color: var(--text-color);
+    display: flex;
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    justify-content: left; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+.header-content {
+    display: flex;
+    justify-content: right; /* Center links horizontally */
+    align-items: center; /* Center links vertically */
+    margin: 1px 20px;
+    width: 25%;
+
+
+}
+.header a{
+    margin: 1px 20px;
+    /*height: 80%;*/
+    width: 10%;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*background-color: lightgray;*/
+    color: black;
+    /*outline: black solid;*/
+
+}
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.header select, option{
+    background-color: var(--first-main-color);
+    border: none;
+}
+
+.header option:hover, a:hover {
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+}
+
+
+.header img{
+    /*height: 100%;*/
+    /*width: 20%;*/
+
+    /*padding: 0 20px;*/
+}
+
+/*.header > div {*/
+/*    display: flex;*/
+/*    justify-content: right; !* Center links horizontally *!*/
+/*    !*align-items: center; !* Center links vertically *!*!*/
+/*    !*height: 25%;*!*/
+/*    !*outline: black solid;*!*/
+/*    !*width: 20%;*!*/
+/*    align-self: center;*/
+/*    justify-self: right;*/
+/*    !*margin-left: 20%;*!*/
+
+/*    width: 20%;*/
+/*    left: 0;*/
+
+/*    input {*/
+/*        !*margin-left: 20%;*!*/
+/*        width: 100%;*/
+/*        text-align: center;*/
+
+
+/*    }*/
+/*}*/
+
+
+.header-search {
+    display: flex;
+    /*justify-content: right; !* Center links horizontally *!*/
+    /*align-items: center; !* Center links vertically *!*/
+    /*height: 25%;*/
+    /*outline: black solid;*/
+    /*width: 20%;*/
+    align-self: center;
+    justify-self: right;
+    /*margin-left: 20%;*/
+
+    width: 20%;
+    right: 0;
+    margin-left: auto;
+    input {
+        /*margin-left: 20%;*/
+        width: 100%;
+        text-align: center;
+
+
+    }
+}
+
+.navbar {
+    display: flex;
+    outline: var(--outline-color) solid;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    color: white;
+    background-color: black;
+    width: 25%;
+}
+.navbar a:hover {
+    color: black;
+    background-color: white;
+}
+
+.empty_wrap {
+    flex-grow: 1;
+    width: 200px;
+}
+
+.titel {
+
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--first-main-color);
+    outline: var(--outline-color) solid;
+}
+
+.undertitel {
+    width: 100%;
+    padding: 6px 0;
+    background-color: var(--first-main-color);
+    outline: var(--outline-color) ridge;
+}
+
+
+.footer {
+    width: 100%;
+}
+
+
+.pakker {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    outline: var(--outline-color) solid;
+}
+
+.pakke > div {
+    flex-grow: 4;
+}
+
+.pakkeDisplay {
+    display: grid;
+    /*grid-template-columns: 50px 50px 50px 50px 50px;*/
+    /*grid-template-rows: 50px 50px 50px 50px 50px;*/
+    /*width: 25%;*/
+    background-color: darkblue;
+    padding: 20px 20px;
+    grid-template-areas:
+            'title title title title'
+            'bilde bilde beskrivelse beskrivelse'
+            'bilde bilde beskrivelse beskrivelse'
+            'innold blank beskrivelse beskrivelse'
+            'innold blank les-mer les-mer';
+    grid-template-rows: 30px 60px 60px 30px 30px;
+
+    /*background-color: dodgerblue;*/
+    /*outline: black solid;*/
+    margin: 20px;
+    gap: 20px;
+}
+.pakkeDisplay > div {
+    background-color: var(--background-color);
+    outline: var(--outline-color) solid;
+}
+.pakkeTitle_grid {
+    grid-area: title;
+}
+.pakkeBilde_grid {
+    grid-area: bilde;
+    grid-row: 2 / span 4;
+}
+.pakkeBeskrivelse_grid {
+    grid-area: beskrivelse;
+}
+.pakkeInnhold_grid {
+    grid-area: innold;
+}
+.pakkeLesMer_grid {
+    grid-area: les-mer;
+}
+.data {
+
+    display: flex;
+    justify-content: space-around;
+    /*padding: 5px;*/
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    /*outline: black solid;*/
+    align-items: center;
+    width: 100%;
+
+}
+.data > div {
+    flex-grow: 4;
+}
+
+.dataDisplay {
+    display: grid;
+    grid-template-areas:
+            'prioritisert prioritisert prioritisert'
+            'tilbud1 blank tilbud2'
+            'tilbud3 bland tilbud4';
+    grid-template-columns: 40% 17% 40%;
+    margin: 0 3%;
+    /*width: 100%;*/
+    gap: 20px;
+}
+
+.dataDisplay > div{
+    outline: var(--outline-color) solid;
+    /*width: 100%;*/
+}
+.dataPrioritisert {
+    grid-area: prioritisert;
+    display: grid;
+    grid-template-areas:
+            'bilde navn'
+            'bilde info'
+            'bilde pris';
+    grid-template-rows: 20px 80px 20px;
+    width: 100%;
+    gap: 20px;
+}
+.dataPrioritisert > div{
+    outline: var(--outline-color) solid;
+}
+.dataTilbud1 {
+    grid-area: tilbud1;
+}
+.dataTilbud2 {
+    grid-area: tilbud2;
+}
+.dataTilbud3 {
+    grid-area: tilbud3;
+}
+.dataTilbud4 {
+    grid-area: tilbud4;
+}
+
+.dataTilbud {
+    display: grid;
+    grid-template-areas:
+            'bilde bilde'
+            'bilde bilde'
+            'navn navn'
+            'informasjon informasjon'
+            'pris pris';
+    grid-template-rows: 2fr 4fr 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 1px;
+}
+
+.dataTilbud > div{
+    outline: var(--outline-color) solid;
+}
+.dataTilbudExtra-text {
+    grid-area: extra-text;
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
+    background-color: black;
+    color: white;
+    align-self: stretch;
+    justify-self: stretch;
+    width: auto;
+    p {
+        /*position: absolute;*/
+        /*align-self: center;*/
+        /*margin-top: 25%;*/
+        /*margin-left: 25%;*/
+        font-size: 2vw;
+        max-font-size: 20px;
+    }
+
+}
+
+.dataTilbudBilde {
+    grid-area: bilde;
+}
+.dataTilbudNavn {
+    grid-area: navn;
+}
+.dataTilbudInformasjon {
+    grid-area: informasjon;
+}
+.dataTilbudPris {
+    grid-area: pris;
+}
+
+.les-mer {
+    width: 25%;
+    margin: 1%;
+    outline: black solid;
+    color: #000000;
+    font-size: 160%;
+    background-color: var(--second-main-color);
+
+}
+
+.lite-produkt-content {
+    display: flex;
+    flex-direction: column;
+    /*height: 500px;*/
+    align-items: stretch;
+    outline: black solid;
+    justify-content: stretch;
+    /*height: 2vh;*/
+    > div {
+        padding: 0.5%;
+        height: 60vh;
+    }
+    > p {
+        outline: var(--outline-color) solid;
+        flex-direction: column;
+    }
+
+}
+
+.lite-produkt-row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: var(--lite-produkt-høyde);
+}
+
+.lite-produkt-container {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    outline: var(--outline-color) solid;
+    /*height: max(100px, 200%);*/
+    /*max-height: 400px;*/
+    /*margin: auto;*/
+
+    width: 15%;
+
+
+}
+
+.lite-produkt-container > div {
+    outline: var(--outline-color) solid;
+
+    text-wrap: pretty;
+
+    /*height: 100%;*/
+    > p {
+        align-self: stretch;
+        justify-self: stretch;
+        width: auto;
+    }
+}
+
+.lite-produkt-header {
+    flex-grow: 1;
+}
+.lite-produkt-bilde {
+    flex-grow: 4;
+    img {
+        width: 26vh;
+        height: 26vh;
+
+    }
+}
+.lite-produkt-info {
+    flex-grow: 2;
+}
+
+.lite-produkt-pris {
+    flex-shrink: 2;
+}
+
+.om-oss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    p {
+        text-wrap: wrap;
+        font-size: 150%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .header, .navbar{
+        flex-direction: column;
+    }
+
+    .dataDisplay {
+        grid-template-areas:
+            'prioritisert prioritisert prioritisert'
+            'blank tilbud1 blank'
+            'blank tilbud2 blank'
+            'blank tilbud3 blank'
+            'blank tilbud4 blank';}
+
+    .header {
+        height: unset;
+        img {
+            align-self: center;
+        }
+        > div {
+            width: 100%;
+        }
+    }
+    .header-content {
+        flex-direction: column;
+
+        width: 100%;
+        a {
+            width: 100%;
+        }
+    }
+
+    .navbar {
+        a {
+            width: 100%;
+        }
+    }
+}
