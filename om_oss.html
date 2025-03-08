@@ -10,21 +10,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-
-        <img src="image/logo.png">
-<!--        <div class="header-content">-->
-        <a href="index.html"><p>hjemesiden</p></a>
-        <a href="om_oss.html"><p>Om oss</p></a>
-        <select>
-            <option><a href="#"><p>Mere om datamaskiner</p></a></option>
-            <option><a href="#"><p>Mere om datamaskiner</p></a></option>
-        </select>
-        <div class="header-search">
-            <input placeholder="søk" type="text" onsubmit="">
-        </div>
-
+<div class="komponenttable">
+    <div class="header"> <!--nav bar til andre nettsider-->
+    <img src="image/logo.png" alt="Bilde av logoen">  <!--Logo-->
+    <a href="index.html"><p>hjemesiden</p></a>
+    <a href="om_oss.html"><p>Om oss</p></a>
+    <a href="datamaskin_info.html"><p>informasjon om komponenter</p></a>
+    <div class="header-search">
+        <input placeholder="søk" type="text" oninput="search(this.value)">
     </div>
+
+</div>
 
     <h1 class="titel">Om oss</h1>
 
