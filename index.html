@@ -8,7 +8,7 @@
 
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Tittel</title>
+    <title>Home</title>
 </head>
 <body>
 <div class="header"> <!--nav bar til andre nettsider-->
@@ -17,10 +17,10 @@
     <a href="om_oss.html"><p>Om oss</p></a>
     <a href="datamaskin_info.html"><p>informasjon om komponenter</p></a>
     <div class="header-search">
-        <input placeholder="søk" type="text" oninput="search(this.value)">
+        <input placeholder="søk" type="text" oninput="search(this.value)">  <!--Vill skrive ut i konsolen-->
     </div>
 
-</div>
+</div>  <!--navigasjonsbar rundt på gjeldene nettside-->
 
     <div class="navbar"> <!--Navigate -->
         <a href="#ferdigsett_titel">pakker</a> <!--Leder til ferdig lagde pakker-->
@@ -28,13 +28,13 @@
         <a href="#PC-utstyr">PC-utstyr</a>
         <a href="#podcast">Podcast utstyr</a>
     </div>
-    <h1 id="ferdigsett_titel" class="titel">Ferdigsett</h1>
+    <h1 id="ferdigsett_titel" class="titel">Ferdigsett</h1> <!--Titel-->
 
     <h2 class="undertitel">Ferdig lagde pakker laget av våre eksperter</h2>
 
-    <div id="kontorpakke" class="pakker">
+    <div id="kontorpakke" class="pakker">   <!--pakkene-->
 
-        <div class="pakkeDisplay">
+        <div class="pakkeDisplay">  <!--Ikke ferdig/bare eksempel-->
             <div class="pakkeTitle_grid">Kontorpakke</div>
             <div class="pakkeBilde_grid"><img src="image/placehodler.jpg" alt="upermanent bilde" style="height: 100%"></div>
             <div class="pakkeBeskrivelse_grid">beskrivelse</div>
@@ -42,14 +42,14 @@
             <div class="pakkeLesMer_grid">Les_mer</div>
         </div>
 
-        <div id="gamingpakke" class="pakkeDisplay">
+        <div id="gamingpakke" class="pakkeDisplay"> <!--Ikke ferdig/bare eksempel-->
             <div class="pakkeTitle_grid">Gamingpakke</div>
             <div class="pakkeBilde_grid"><img src="image/placehodler.jpg" alt="upermanent bilde" style="height: 100%"></div>
             <div class="pakkeBeskrivelse_grid">beskrivelse</div>
             <div class="pakkeInnhold_grid">innhold</div>
             <div class="pakkeLesMer_grid">Les_mer</div>
         </div>
-        <div id="podkastpakke" class="pakkeDisplay">
+        <div id="podkastpakke" class="pakkeDisplay">    <!--Ikke ferdig/bare eksempel-->
             <div class="pakkeTitle_grid">Podkastpakke</div>
             <div class="pakkeBilde_grid"><img src="image/placehodler.jpg" alt="upermanent bilde" style="height: 100%"></div>
             <div class="pakkeBeskrivelse_grid">beskrivelse</div>
@@ -58,10 +58,10 @@
         </div>
     </div>
 
-    <h1 id="datamaskiner" class="titel">Datamaskiner</h1>
-    <div class="data">
-        <div class="dataDisplay">
-            <div class="dataPrioritisert">
+    <h1 id="datamaskiner" class="titel">Datamaskiner</h1>   <!--titel til datamaskiner-->
+    <div class="data">  /<!--Flexbox-->
+        <div class="dataDisplay">   <!--Grid-->
+            <div class="dataPrioritisert">  <!--Ikke ferdig/bare eksempel-->
                 <div style="grid-area: bilde"><img src="image/placehodler.jpg" alt="upermanent bilde" style="height: 100%"></div>
                 <div style="grid-area: navn">test</div>
                 <div style="grid-area: info">test</div>
@@ -88,9 +88,11 @@
                 <div class="dataTilbudNavn">Player: Two</div>
                 <div class="dataTilbudInformasjon"><p>Dette er en sterk PC, som vil passe til mesteparten av spillene dine.</p></div>
                 <div class="dataTilbudPris">17319,89 KR</div>
-            </div>lass="dataTilbud4 dataTilbud">
+            </div>
+
+            <div class="dataTilbud4 dataTilbud">    <!--Ikke ferdig/bare eksempel-->
                 <div class="dataTilbudBilde"><img src="image/placehodler.jpg" alt="placeholder-bilde" style="width: 80%"></div>
-                <div class="dataTilbudExtra-text">extra</div>
+            <div class="dataTilbudExtra-text"><p>extra</p></div>
                 <div class="dataTilbudNavn">navn</div>
                 <div class="dataTilbudInformasjon">info</div>
                 <div class="dataTilbudPris">pris</div>
@@ -185,21 +187,6 @@
                     651,43 KR/månde for alle programmene
                 </div>
             </div>
-
-<!--            <div class="lite-produkt-container">-->
-<!--                <div class="lite-produkt-header">-->
-<!--                    test-->
-<!--                </div>-->
-<!--                <div class="lite-produkt-bilde">-->
-<!--                    bilde-->
-<!--                </div>-->
-<!--                <div class="lite-produkt-info">-->
-<!--                    informasjon er et ord-->
-<!--                </div>-->
-<!--                <div class="lite-produkt-pris">-->
-<!--                    200kr-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
     </div>
 </body></html>
