@@ -365,7 +365,7 @@ a {
 }
 
 .lite-produkt-container {
-    font-size: 2vh;
+    font-size: 1vw;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -374,7 +374,7 @@ a {
     /*max-height: 400px;*/
     /*margin: auto;*/
 
-    width: 20%;
+    width: 15%;
 
 
 }
@@ -394,16 +394,12 @@ a {
 
 .lite-produkt-header {
     flex-grow: 1;
-    /*height: 20px;*/
 }
 .lite-produkt-bilde {
-    flex-grow: 3;
+    flex-grow: 4;
     img {
-        /*width: 26vh;*/
-        /*height: 26vh;*/
-        width: 100%;
-        /*height: 20vw;*/
-
+        width: 26vh;
+        height: 26vh;
 
     }
 }
@@ -419,23 +415,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
     p {
         text-wrap: wrap;
-        /*font-size: 150%;*/
+        font-size: 150%;
     }
 }
 
-
-.komponenttable {
-    table, tr, td, th {
-        outline: var(--outline-color) solid;
-    }
-    table {
-        width: 100%;
-
-    }
-}
 
 @media screen and (max-width: 700px) {
     .header, .navbar{
