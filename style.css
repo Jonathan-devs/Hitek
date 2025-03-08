@@ -226,7 +226,7 @@ a {
     grid-area: extra-text;
     grid-column: 1/ span 1;
     grid-row: 1/ span 1;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 20%);
     color: white;
     align-self: stretch;
     justify-self: stretch;
